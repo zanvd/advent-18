@@ -1,5 +1,5 @@
-input = open('i-z.txt', 'r')
-output = open('o-z-2.txt', 'w')
+input = open('input.txt', 'r')
+output = open('output-2.txt', 'w')
 
 result = 0
 result_set = set([0]);
