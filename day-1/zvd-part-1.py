@@ -1,5 +1,5 @@
 input = open('i-z.txt', 'r')
-output = open('o-z.txt', 'w')
+output = open('o-z-1.txt', 'w')
 
 result = 0
 
