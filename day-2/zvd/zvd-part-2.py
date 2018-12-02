@@ -4,11 +4,10 @@ output = open('output-2.txt', 'w')
 # Read whole file since we are going to iterate over it in nested loops.
 box_ids = input.read().splitlines()
 
-for box_id_1 in box_ids:
-	for box_id_2 in box_ids:
-		# If two ids are the same, just continue.
-		if box_id_1 == box_id_2:
-			continue
+# Iterate over box ids and get the index of the current box id.
+# Inner loop should go on from the next box id.
+for index_1, box_id_1 in enumerate(box_ids):
+	for box_id_2 in box_ids[index_1 + 1:]:
 
 		common = ''
 		diff_num = 0
