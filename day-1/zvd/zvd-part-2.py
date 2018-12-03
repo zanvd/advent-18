@@ -1,5 +1,5 @@
-input = open('input.txt', 'r')
-output = open('output-2.txt', 'w')
+in_file = open('input.txt', 'r')
+out_file = open('output-2.txt', 'w')
 
 result = 0
 result_set = set([0]);
@@ -7,7 +7,7 @@ found = False
 freq = 0
 
 while (not found):
-	for num in input:
+	for num in in_file:
 		result += int(num)
 		if result in result_set:
 			freq = result
@@ -16,10 +16,10 @@ while (not found):
 		else:
 			result_set.add(result)
 
-	input.seek(0)
+	in_file.seek(0)
 
-output.write(str(freq))
+out_file.write(str(freq))
 
-input.close()
-output.close()
+in_file.close()
+out_file.close()
 

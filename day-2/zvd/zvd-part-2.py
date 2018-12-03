@@ -1,8 +1,8 @@
-input = open('input.txt', 'r')
-output = open('output-2.txt', 'w')
+in_file = open('input.txt', 'r')
+out_file = open('output-2.txt', 'w')
 
 # Read whole file since we are going to iterate over it in nested loops.
-box_ids = input.read().splitlines()
+box_ids = in_file.read().splitlines()
 
 # Iterate over box ids and get the index of the current box id.
 # Inner loop should go on from the next box id.
@@ -37,8 +37,8 @@ for index_1, box_id_1 in enumerate(box_ids):
 
 	break
 
-output.write(common)
+out_file.write(common)
 
-input.close()
-output.close()
+in_file.close()
+out_file.close()
 

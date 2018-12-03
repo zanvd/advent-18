@@ -1,13 +1,13 @@
-input = open('input.txt', 'r')
-output = open('output-1.txt', 'w')
+in_file = open('input.txt', 'r')
+out_file = open('output-1.txt', 'w')
 
 result = 0
 
-for num in input:
+for num in in_file:
 	result += int(num)
 
-output.write(str(result))
+out_file.write(str(result))
 
-input.close()
-output.close()
+in_file.close()
+out_file.close()
 

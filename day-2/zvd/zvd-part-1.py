@@ -1,10 +1,10 @@
-input = open('input.txt', 'r')
-output = open('output-1.txt', 'w')
+in_file = open('input.txt', 'r')
+out_file = open('output-1.txt', 'w')
 
 twice = 0
 thrice = 0
 
-for box_id in input:
+for box_id in in_file:
 	twice_found = thrice_found = False
 
 	# Get unique letters in a box id.
@@ -27,8 +27,8 @@ for box_id in input:
 		if twice_found and thrice_found:
 			break
 
-output.write(str(twice * thrice))
+out_file.write(str(twice * thrice))
 
-input.close()
-output.close()
+in_file.close()
+out_file.close()
 
