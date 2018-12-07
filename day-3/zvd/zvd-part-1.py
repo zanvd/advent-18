@@ -1,4 +1,4 @@
-import re, collections
+import re
 
 
 in_file = open('input.txt', 'r')
